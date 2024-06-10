@@ -19,6 +19,10 @@ function appendToDisplay(input) {
   }
 }
 
+function clearDisplay() {
+  display.value = "0";
+  decimalAdded = false;
+}
 
 function calculate() {
   const expression = display.value;
@@ -53,5 +57,16 @@ function calculate() {
     decimalAdded = false;
   } catch (error) {
     display.value = "Error";
+  }
+}
+
+function appendDecimal() {
+  if (!decimalAdded) {
+    if (lastInput === "" || isNaN(lastInput)) {
+      appendToDisplay("0.");
+    } else {
+      appendToDisplay(".");
+    }
+    decimalAdded = true;
   }
 }
