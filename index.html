@@ -8,28 +8,30 @@
 <body>
   <div id="calculator">
     
-      <input type="text" value="0">
-      <div>
+      <input type="text" id="display" value="0"  readonly>
+      <div id="clear">
         <button onclick="" class="clear">C</button></div>
-    <div>
-      <button onclick="">7</button>
-      <button onclick="">8</button>
-      <button onclick="">9</button>
-      <button onclick="" class="op-btn">÷</button>
-      <button onclick="">4</button>
-      <button onclick="">5</button>
-      <button onclick="">6</button>
-      <button onclick=""  class="op-btn">x</button>
-      <button onclick="">1</button>
-      <button onclick="">2</button>
-      <button onclick="">3</button>
-      <button onclick=""  class="op-btn">-</button>
-      <button onclick="">0</button>
-      <button onclick="">.</button>
-      <button onclick="" class="green">=</button>
-      <button onclick=""  class="op-btn">+</button>
+    <div id="cal_btn">
+        
+      <button onclick="appendToDisplay('7')">7</button>
+      <button onclick="appendToDisplay('8')">8</button>
+      <button onclick="appendToDisplay('9')">9</button>
+      <button onclick="appendToDisplay('/')" class="op-btn">÷</button>
+      <button onclick="appendToDisplay('4')">4</button>
+      <button onclick="appendToDisplay('5')">5</button>
+      <button onclick="appendToDisplay('6')">6</button>
+      <button onclick="appendToDisplay('*')"  class="op-btn">x</button>
+      <button onclick="appendToDisplay('1')">1</button>
+      <button onclick="appendToDisplay('2')">2</button>
+      <button onclick="appendToDisplay('3')">3</button>
+      <button onclick="appendToDisplay('-')"  class="op-btn">-</button>
+      <button onclick="appendToDisplay('0')">0</button>
+      <button onclick="appendToDisplay('.')">.</button>
+      <button onclick="calculate()" class="green">=</button>
+      <button onclick="appendToDisplay('+')"  class="op-btn">+</button>
       
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
