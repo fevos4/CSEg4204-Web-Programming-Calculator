@@ -16,9 +16,8 @@ body{
 
 }
 #display{
-    
+    box-sizing: border-box;
     width: 455px;
-    height: 122px;
     margin: 15px;
     margin-left: 20px;
     font-size: 48px;
@@ -27,7 +26,8 @@ body{
     border-radius: 10px;
     background-color: #333333;
     color: white;
-    padding-right: 5px;
+
+    padding: 26px;
 }
 #cal_btn{
     display: grid;
@@ -37,4 +37,30 @@ body{
     padding-left: 25px;
     padding-top: 40px;
     grid-row-gap: 20px;
+}
+
+button{
+    width: 80px;
+    height: 90px;
+    border-radius: 13px;
+    border: none;
+    background-color: #777777;
+    color: white;
+    font-size: 48px;
+    cursor: pointer;
+}
+.op-btn{
+    background-color:#ff9500;
+}
+.clear{
+    background-color: #ff0000;
+    margin-left:400px;
+    margin-top: 10px;
+    height: 100px;
+    
+}
+
+
+.green{
+    background-color: #22ba45;
 }
